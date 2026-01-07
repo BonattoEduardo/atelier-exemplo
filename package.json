@@ -9,13 +9,21 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "@react-router/node": "7.10.1",
     "@react-router/serve": "7.10.1",
     "@sveltia/cms": "^0.127.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "front-matter": "^4.0.2",
     "isbot": "^5.1.31",
+    "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-router": "7.10.1"
+    "react-markdown": "^10.1.0",
+    "react-router": "7.10.1",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@react-router/dev": "7.10.1",

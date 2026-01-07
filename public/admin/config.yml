@@ -30,6 +30,46 @@ locale: pt-BR
 
 # Collections
 collections:
+  # Landing Page (Singleton)
+  - name: landing_page
+    label: Landing Page
+    files:
+      - name: home
+        label: Home Page
+        file: content/landing.md
+        fields:
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - {label: Brand Name, name: brand, widget: string}
+              - {label: CTA Text, name: cta_text, widget: string}
+              - {label: CTA Link, name: cta_link, widget: string}
+
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: text}
+              - {label: CTA Text, name: cta_text, widget: string}
+              - {label: CTA Link, name: cta_link, widget: string}
+              - {label: Image, name: image, widget: image, required: false}
+          
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Icon Name, name: icon, widget: string, hint: "Nome do ícone Lucide (ex: Layout, Zap)"}
+
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - {label: Content, name: content, widget: markdown}
+              
   # Páginas Estáticas
   - name: pages
     label: Páginas
