@@ -18,9 +18,10 @@ export default {
                 return new Response("Unsupported provider", { status: 400 });
             }
 
-            const GITHUB_CLIENT_ID = env.GITHUB_CLIENT_ID;
+            const GITHUB_CLIENT_ID = env.GITHUB_CLIENT_ID || (globalThis as any).GITHUB_CLIENT_ID;
             if (!GITHUB_CLIENT_ID) {
-                return new Response("GITHUB_CLIENT_ID not configured", { status: 500 });
+                const availableKeys = Object.keys(env || {}).join(", ");
+                return new Response(`GITHUB_CLIENT_ID not configured. Available env keys: ${availableKeys || "none"}`, { status: 500 });
             }
 
             const redirectUri = `${url.origin}/callback`;
@@ -42,11 +43,11 @@ export default {
                 return new Response("Missing code", { status: 400 });
             }
 
-            const GITHUB_CLIENT_ID = env.GITHUB_CLIENT_ID;
-            const GITHUB_CLIENT_SECRET = env.GITHUB_CLIENT_SECRET;
+            const GITHUB_CLIENT_ID = env.GITHUB_CLIENT_ID || (globalThis as any).GITHUB_CLIENT_ID;
+            const GITHUB_CLIENT_SECRET = env.GITHUB_CLIENT_SECRET || (globalThis as any).GITHUB_CLIENT_SECRET;
 
             if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
-                return new Response("GitHub App not configured on server", { status: 500 });
+                return new Response("GitHub App not configured (Runtime Secrets missing)", { status: 500 });
             }
 
             const response = await fetch("https://github.com/login/oauth/access_token", {
@@ -104,7 +105,14 @@ export default {
         }
 
         // 3. Serve Static Assets for everything else
-        // Fetch from assets binding if available, otherwise return 404
-        return env.ASSETS.fetch(request);
+        // In Workers with Assets, the worker runs first. 
+        // If we return nothing or don't handle it, it should fall back to assets.
+        // However, if we want to be explicit:
+        if (env.ASSETS) {
+            return env.ASSETS.fetch(request);
+        }
+
+        // Fallback for when ASSETS binding is not explicitly visible but directory is set
+        return new Response("Not Found", { status: 404 });
     },
 };
