@@ -9,7 +9,9 @@ backend:
   name: github
   repo: cris-guedes/cms-git-based # ALTERE ISSO para seu repositório GitHub seu-usuario/seu-repositorio
   branch: main # ou master, dependendo do seu repositório
-  site_id: cdb0b049-c5ec-49d3-b119-002b94504511
+  site_id: 678475f8-ad98-4c16-87bf-bc4be742403b
+  app_id: Ov23likCngcuoxyDwaiF
+  auth_type: implicit
 
 # Workflow Editorial (permite rascunhos e revisão antes de publicar)
 publish_mode: editorial_workflow
