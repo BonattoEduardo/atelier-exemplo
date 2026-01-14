@@ -1,7 +1,7 @@
 ---
 header:
-  brand: Testess
-  cta_text: Acessar Adminsss
+  brand: Teste222
+  cta_text: Acessar Admin
   cta_link: /admin
 hero:
   title: Seu site incrível começa aqui
