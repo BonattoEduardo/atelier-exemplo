@@ -7,7 +7,7 @@ logo:
 # Backend Configuration
 backend:
   name: github
-  repo: BonattoEduardo/cms-git-based
+  repo: BonattoEduardo/atelier-exemplo
   base_url: https://atelier-exemplo.edubonatto10.workers.dev
   branch: main # ou master, dependendo do seu repositório
 
