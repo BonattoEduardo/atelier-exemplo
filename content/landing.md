@@ -1,6 +1,6 @@
 ---
 header:
-  brand: Teste222
+  brand: dklasniodnasljkdnakls
   cta_text: Acessar Admin
   cta_link: /admin
 hero:
