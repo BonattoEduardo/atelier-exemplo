@@ -19,7 +19,7 @@ hero:
   cta_secondary_link: /sobre
   image: https://lh3.googleusercontent.com/aida-public/AB6AXuBWE4pUvx7Yp-2hQiFK728rCLjBSvT7yinyBv2jc7ggcBVYtiwYQdDDvuKqQDhGu3XmR90acxFJI4WYX9Q1j-dBHKuae21CPQvVLWee1S-1v9EC3mL9QXqH2cQbUjqJC-7Ra-EBXWLgcxXDIExVJ3lnnZICNssGmu0AYDeGrRsNqVr68YM6IG4fHZy9QWKC8oQbbbKCtlvfIIVby-8MZ5nGSl1XTV9FXyGqbG87NQ2AE6Qe1zxHKBfSDBJs96sPLAiN_l_5fYk6MpxX
 features_section:
-  title: "Do fio à massa: Nossa Arte"
+  title: 'Do fio à massa: Nossa Arte'
   description: Explore nossos dois universos de criação artesanal, onde cada detalhe conta uma história feita com dedicação e materiais de excelência.
   items:
     - category: O Mundo do Crochê
@@ -46,7 +46,7 @@ about:
     - Olá! Sou a Maria, a mente e o coração por trás do Ateliê. Comecei a crochetar quando estava grávida do meu primeiro filho e me apaixonei pela arte de criar algo único do zero.
     - Hoje, dedico meus dias a modelar sonhos em biscuit e tecer conforto em crochê. Cada peça que sai do meu ateliê carrega uma dose extra de carinho, pensada para durar e ser lembrada com afeto.
   cta_text: Conheça minha história
-  cta_link: "#"
+  cta_link: '#'
   image: https://lh3.googleusercontent.com/aida-public/AB6AXuDJnr5kA5cW4E1LVCuNLEz80nURwT_CWAzqY5XwGEebeZe3T5ZGxu_WPI4AAV1vUwN2e-tcQp0m4S0-5ijnemZk-hos6DdbbFDCF-d7adweDjbKoADThlspuXydKVldbycPDrC14ikICrcy_X_cUdSHfJdECdQ4SXHgCUCCbPJ5ulniE05hGtfaPkavp-ZWDHn4-OX_tu-9vdCr5wp_k-VbWwNJSa-Yq8ZVIUUfekJOnBhmN5gN0DN7n3AKk6EmWs86D3SuXmhuWr_i
   rating_value: 5.0/5.0
   rating_text: Avaliações de mamães satisfeitas em todo o Brasil.
@@ -65,7 +65,7 @@ testimonials_section:
     - name: Patrícia Lima
       relation: Mãe do Bento
       quote: Atendimento excelente desde o primeiro contato. A Maria entendeu exatamente o que eu queria para o batizado.
-      avatar: https://lh3.googleusercontent.com/aida-public/AB6AXuAcKqa1pvOIMdoYmzPsxK_UHms1oE9PmXGKzcKldZ0qjefWkJOI_ykgRPLKCCtwi3rdxVeiZPM1X1aFC4KXLPoGVDGhgAFq81fKt4pXDTRRsTXhj0WMkjhrcXtf2YsbGJcPpdyCgMC2PI5CL3oZGcWsIEHuxeUK8mSZeqqNviKrwbsVQN96BGKMnMZoX9q8qdtmpR1dxFRxB3mIbF-1bFHizvG3q119h5D1iVZgnVSXnj0p1paFRE6v9lv3T7Zxvo7RmwIwIvZ_maib
+      avatar: /media/f.jpeg
 footer:
   description: Transformando fios e massa em amor. Produtos artesanais feitos à mão com dedicação exclusiva para você.
   nav:
@@ -81,5 +81,6 @@ footer:
     email: contato@atelieartesa.com
     phone: (11) 99999-9999
     location: São Paulo, SP
-whatsapp_link: "#"
+whatsapp_link: '#'
 ---
+
