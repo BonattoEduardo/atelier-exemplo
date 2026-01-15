@@ -7,8 +7,8 @@ logo:
 # Backend Configuration
 backend:
   name: github
-  repo: cris-guedes/cms-git-based
-  base_url: https://cms-git-based.cristianguedes136.workers.dev
+  repo: BonattoEduardo/cms-git-based
+  base_url: https://atelier-exemplo.edubonatto10.workers.dev
   branch: main # ou master, dependendo do seu repositório
 
 # Workflow Editorial (permite rascunhos e revisão antes de publicar)
