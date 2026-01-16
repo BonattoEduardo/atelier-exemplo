@@ -8,7 +8,7 @@ logo:
 backend:
   name: github
   repo: BonattoEduardo/atelier-exemplo
-  base_url: https://atelier-exemplo.edubonatto10.workers.dev
+  base_url: https://estudiodev.com.br
   branch: main # ou master, dependendo do seu repositório
 
 # Workflow Editorial (permite rascunhos e revisão antes de publicar)
