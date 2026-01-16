@@ -7,5 +7,11 @@
     },
     "observability": {
         "enabled": true
-    }
+    },
+    "routes": [
+        {
+            "pattern": "estudiodev.com.br",
+            "custom_domain": true
+        }
+    ]
 }
